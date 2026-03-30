@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para mi colochita 💖</title>
+
+<style>
+body {
+  margin: 0;
+  background: radial-gradient(circle, #fff, #ffd6e0);
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* TEXTO */
+h1 {
+  margin-top: 30px;
+  color: #ff4d6d;
+  font-size: 2.8em;
+  text-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+}
+
+/* RAMO */
+.bouquet {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: auto;
+}
+
+/* FLORES MÁS BONITAS */
+.flower {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+}
+
+.petal {
+  position: absolute;
+  width: 45px;
+  height: 65px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+  transform-origin: bottom center;
+}
+
+.center {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ffd60a;
+  border-radius: 50%;
+  top: 30px;
+  left: 30px;
+}
+
+/* MÁS PÉTALOS */
+.p1 { transform: rotate(0deg) translateY(-25px); }
+.p2 { transform: rotate(45deg) translateY(-25px); }
+.p3 { transform: rotate(90deg) translateY(-25px); }
+.p4 { transform: rotate(135deg) translateY(-25px); }
+.p5 { transform: rotate(180deg) translateY(-25px); }
+.p6 { transform: rotate(225deg) translateY(-25px); }
+.p7 { transform: rotate(270deg) translateY(-25px); }
+.p8 { transform: rotate(315deg) translateY(-25px); }
+
+/* TALLOS */
+.stem {
+  position: absolute;
+  width: 5px;
+  height: 140px;
+  background: #2b9348;
+  top: 80px;
+  left: 42px;
+}
+
+/* POSICIONES (RAMO GRANDE) */
+.f1 { top: 20px; left: 130px; }
+.f2 { top: 70px; left: 40px; }
+.f3 { top: 70px; left: 220px; }
+.f4 { top: 140px; left: 100px; }
+.f5 { top: 140px; left: 200px; }
+.f6 { top: 140px; left: 20px; }
+
+/* CORAZÓN MINECRAFT */
+.heart {
+  position: relative;
+  width: 120px;
+  height: 110px;
+  margin: 10px auto;
+}
+
+.pixel {
+  width: 20px;
+  height: 20px;
+  background: #ff0000;
+  position: absolute;
+}
+
+/* PIXELES DEL CORAZÓN */
+.pixel:nth-child(1){top:0; left:40px;}
+.pixel:nth-child(2){top:0; left:60px;}
+.pixel:nth-child(3){top:20px; left:20px;}
+.pixel:nth-child(4){top:20px; left:40px;}
+.pixel:nth-child(5){top:20px; left:60px;}
+.pixel:nth-child(6){top:20px; left:80px;}
+.pixel:nth-child(7){top:40px; left:20px;}
+.pixel:nth-child(8){top:40px; left:40px;}
+.pixel:nth-child(9){top:40px; left:60px;}
+.pixel:nth-child(10){top:40px; left:80px;}
+.pixel:nth-child(11){top:60px; left:40px;}
+.pixel:nth-child(12){top:60px; left:60px;}
+.pixel:nth-child(13){top:80px; left:50px;}
+
+/* PÉTALOS CAYENDO */
+.falling {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Para mi colochita ❤️</h1>
+
+<!-- CORAZÓN -->
+<div class="heart">
+  <div class="pixel"></div><div class="pixel"></div>
+  <div class="pixel"></div><div class="pixel"></div>
+  <div class="pixel"></div><div class="pixel"></div>
+  <div class="pixel"></div><div class="pixel"></div>
+  <div class="pixel"></div><div class="pixel"></div>
+  <div class="pixel"></div><div class="pixel"></div>
+  <div class="pixel"></div>
+</div>
+
+<!-- RAMO -->
+<div class="bouquet">
+  <div class="flower f1"><div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div><div class="center"></div><div class="stem"></div></div>
+  <div class="flower f2"><div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div><div class="center"></div><div class="stem"></div></div>
+  <div class="flower f3"><div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div><div class="center"></div><div class="stem"></div></div>
+  <div class="flower f4"><div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div><div class="center"></div><div class="stem"></div></div>
+  <div class="flower f5"><div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div><div class="center"></div><div class="stem"></div></div>
+  <div class="flower f6"><div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div><div class="center"></div><div class="stem"></div></div>
+</div>
+
+<button onclick="playMusic()">🎶 Música</button>
+
+<audio id="music" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playMusic() {
+  document.getElementById("music").play();
+}
+
+// pétalos cayendo
+function crearPetalo() {
+  const p = document.createElement("div");
+  p.classList.add("falling");
+  p.style.left = Math.random() * window.innerWidth + "px";
+  p.style.animationDuration = (3 + Math.random() * 4) + "s";
+  document.body.appendChild(p);
+
+  setTimeout(() => p.remove(), 7000);
+}
+
+setInterval(crearPetalo, 250);
+</script>
+
+</body>
+</html>
